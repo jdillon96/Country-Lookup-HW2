@@ -3,9 +3,9 @@ import Clean from "./Clean";
 
 export default function Info({ text, data, section }) {
   function check({ data, section }) {
-    let SectionList = Object.values(section);
-    for (let i = 0; i < SectionList.length; i++) {
-      data[SectionList[i]] ? (data = data[SectionList[i]]) : (data = "");
+    let sectionList = Object.values(section);
+    for (let i = 0; i < sectionList.length; i++) {
+      data[sectionList[i]] ? (data = data[sectionList[i]]) : (data = "");
     }
     return data;
   }
